@@ -24,7 +24,7 @@ async def on_startup(dispatcher):
     site = web.TCPSite(runner, "0.0.0.0", int(os.getenv("PORT", 8080)))
     await site.start()
 
-TOKEN = os.getenv ("TOKEN")
+TOKEN = os.getenv("TOKEN")
 ADMIN_ID = 8778662008
 CHANNEL = "@kyivtrash1"
 
