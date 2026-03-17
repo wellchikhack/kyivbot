@@ -300,6 +300,7 @@ async def set_lang(message: types.Message):
 # ---------------- RUN ----------------
 
 async def main():
+    await on_starttup(dp)
     await bot.delete_webhook()
     await dp.start_polling(bot)
 
