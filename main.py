@@ -2,6 +2,7 @@ import asyncio
 import logging
 import sqlite3
 import time
+import os
 from aiogram import Bot, Dispatcher, types, F
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton, LabeledPrice, PreCheckoutQuery
 from aiogram.filters import CommandStart
@@ -9,7 +10,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 from aiogram.fsm.state import StatesGroup, State
 from aiogram.fsm.context import FSMContext
 
-TOKEN = "8698806269:AAGHmBlPK4N4EnaNS0RHHkBNai5LvvLKgew"
+TOKEN = os.getenv ("TOKEN")
 ADMIN_ID = 8778662008
 CHANNEL = "@kyivtrash1"
 
